@@ -51,9 +51,9 @@
 	<body onload="go()" class="bg">
 		<script>
 		if(window.applicationCache.status==2){localStorage.is702Cached=true;}
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";localStorage.is702Cached=false;};
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="APLICANDO CACHE";localStorage.is702Cached=false;};
 			window.applicationCache.onprogress=function(a){document.getElementById("myBar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";document.getElementById("myBar").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";localStorage.is702Cached=true;setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page to Run the Exploit!!"; }, 1500);};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="CACHE APLICADO COM SUCESSO";localStorage.is702Cached=true;setTimeout(function(){document.getElementById("progress").innerHTML="DESATIVE A INTERNET E RE-ABRA PARA INICIAR O WEBKIT & GOLDHEN!!"; }, 1500);};
 		</script>
 		<script>
 			var width = 0;
@@ -87,7 +87,7 @@
 
 function done(){
             toggle_payload();
-			document.getElementById("progress").innerHTML='HEN GOLD 1.1 OK EXIT... <br>'+
+			document.getElementById("progress").innerHTML='GOLDHEN 1.0 APLICADO <br>'+
 			'<tr>';
 	    }
 			window.midExploit = function()
@@ -118,7 +118,7 @@ function done(){
 		<script src="utils.js"></script>
 		<script src="int64.js"></script>
 		<script src="ps4.js"></script>
-		<h1 id="progress" class="titlehead">Loading.. Please Wait !!</h1><br>
+		<h1 id="progress" class="titlehead">CARREGANDO POR FAVOR ESPERE</h1><br>
 		<button style="opacity:0" id="input1" onfocus="handle2()"></button>
 		<button style="opacity:0" id="input2"></button>
 		<button style="opacity:0" id="input3" onfocus="handle2()"></button>
